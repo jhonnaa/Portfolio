@@ -1,0 +1,650 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.burger-menu{
+    display: none;
+}
+h2{
+    font-size: 48px;
+    font-family: 'Titillium Web', sans-serif;
+}
+h3{
+    top: 70px;
+    font-size: 18px;
+    font-family: 'Titillium Web', sans-serif;
+    position:absolute;
+    z-index: -5;
+    transform: translateY(0);
+    transition: transform .6s;
+}
+.espacio{
+    height: 48px;
+    width: 100%;
+}
+footer h2{
+    color: white;
+    font-size: 48px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.imagen{
+    top:48px;
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://img.freepik.com/fotos-premium/hombre-guapo-feliz-auriculares-sosteniendo-telefono-celular-celebrando-persona-feliz-usando-su-telefono-inteligente-celebrando-victoria-aislado_550253-1931.jpg?w=2000");
+    background-size: cover;
+}
+nav{
+    position: fixed;
+    background:  linear-gradient(to top, #2167CF, #000000);
+    width: 100%;
+    height: 48px;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 20;
+}
+.list-desktop{ 
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+
+}
+li{
+    position: relative;
+    display: flex;
+    width: 100%;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight:bolder;
+    color: white;
+}
+li:hover{
+    background-color: white;
+    color: #000000;
+    transition: .6s;
+    cursor: pointer;
+}
+
+.cont-about{
+    display: flex;
+    width: 100%;
+    height: 600px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 70%;
+    background-color: aliceblue;;
+    border-bottom: solid white 10px;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    padding: 16px;
+}
+.cont-proyects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 70%;
+    background: aliceblue;
+    border-bottom: solid white 10px;
+}
+
+.cont-icons{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows:  25% 25% 25% 25%;
+    
+    padding: 8px;    
+    width: 100%;
+    height: 85%;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid white 10px;
+}
+.short-description{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;;
+    border-bottom: solid white 10px;
+}
+
+.cont-skills{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+.cont-skills .title{
+    width: 100%;
+    height: 15%;
+}
+.tegnologyes{
+    display: flex;
+    height: 600px;
+    
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height:auto;
+    background-color: rgb(20, 20, 20);
+}
+
+.titular{
+    position: absolute;
+    width: auto;
+    height: 80px;
+    left: 50%;
+    top: 70%;
+    font-family: 'Oswald', sans-serif;
+    font-size:80px;
+    font-weight: bold;
+}
+.name{
+    position: absolute;
+    width: auto;
+    height: 80px;
+    left: 60%;
+    top: 20%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.icons{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    perspective: 300px;
+}
+
+
+.icons i{
+    margin-bottom: 5px;
+    border-radius: 22px;
+    display: flex;
+    width: 96px;
+    height: 96px;
+    background: linear-gradient(to top, #2167CF, #000000);
+    font-size: 72px;
+    color: white;
+    transition: all .6s;
+}
+
+.icons i:hover{
+    border-radius: 0;
+    transform: rotateX(45deg);
+    box-shadow: 5px 5px 5px  rgb(66, 66, 66);
+}
+i:hover~h3{
+    display: flex; 
+    transform: translateY(20px);
+}
+
+
+.fa-brands , .fa-solid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.contact{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 72px;
+}
+
+
+.i-contact{
+    
+    color: white;
+    font-size: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: perspective(600px) rotateY(0deg);
+}
+
+.card-contact{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+
+
+.back{
+    position: absolute;
+    transform: perspective(600px) rotateY(180deg);
+    width: 100%;
+    height: 100%;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(to top, #2167CF, #000000);
+    font-family: 'Titillium Web', sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 16px;
+}
+
+.face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card-contact:hover .i-contact{
+    transform: perspective(600px) rotateY(180deg);
+}
+.card-contact:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+
+
+
+
+.container{
+    display: none;
+}
+
+@media screen and (max-width: 780px) {
+
+
+    
+    /* ///////////..utility classes../////////// */
+   
+    
+    .container {
+        z-index: 10;
+        
+      max-width: 1200px;
+      width: 100%;
+      margin: auto;
+    }
+
+    
+    /* ............/navbar/............ *
+    
+    /* desktop mode............/// */
+    
+    input[type="checkbox"],
+    .hamburger-lines {
+      display: none;
+    }
+    
+    .navbar-container {
+      display: none;
+      justify-content: space-between;
+      height: 64px;
+      align-items: center;
+    }
+    
+    .menu-items {
+      order: 2;
+      display: flex;
+      flex-direction: column;
+      background: linear-gradient(to left, #2167CF, #000000);
+    }
+    
+    .menu-items li {
+      list-style: none;
+      margin-left: 1.5rem;
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+    }
+    
+    .menu-items a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      transition: color 0.3s ease-in-out;
+    }
+    
+    .menu-items a:hover {
+      color: #117964;
+      transition: color 0.3s ease-in-out;
+    }
+    
+    .logo {
+      order: 1;
+      font-size: 2.3rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    
+    
+    /* ......../ media query /.......... */
+    
+    @media (max-width: 640px) {
+
+        .list-desktop{
+            display: none;
+        }
+      .navbar-container input[type="checkbox"],
+      .navbar-container .hamburger-lines {
+        display: block;
+      }
+    
+      .navbar-container {
+        display: block;
+        position: relative;
+        height: 64px;
+      }
+    
+      .navbar-container input[type="checkbox"] {
+        position: absolute;
+        display: block;
+        height: 32px;
+        width: 30px;
+        top: 20px;
+        left: 20px;
+        z-index: 5;
+        opacity: 0;
+      }
+    
+      .navbar-container .hamburger-lines {
+        display: block;
+        height: 23px;
+        width: 35px;
+        position: absolute;
+        top: 17px;
+        left: 20px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    
+      .navbar-container .hamburger-lines .line {
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: #ffffff;
+      }
+    
+      .navbar-container .hamburger-lines .line1 {
+        transform-origin: 0% 0%;
+        transition: transform 0.4s ease-in-out;
+      }
+    
+      .navbar-container .hamburger-lines .line2 {
+        transition: transform 0.2s ease-in-out;
+      }
+    
+      .navbar-container .hamburger-lines .line3 {
+        transform-origin: 0% 100%;
+        transition: transform 0.4s ease-in-out;
+      }
+    
+ .menu-items {
+        padding-top: 100px;
+        height: 100vh;
+        max-width: 300px;
+        transform: translate(-150%);
+        display: flex;
+        flex-direction: column;
+        margin-left: -40px;
+        padding-left: 50px;
+        transition: transform 0.5s ease-in-out;
+        box-shadow: 5px 0px 10px 0px #aaa;
+      }
+    
+       .menu-items li {
+        margin-bottom: 1.5rem;
+        font-size: 1.3rem;
+        font-weight: 500;
+      }
+    
+      .navbar-container input[type="checkbox"]:checked ~ .menu-items {
+        transform: translateX(0);
+      }
+    
+      .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+        transform: rotate(35deg);
+      }
+    
+      .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+        transform: scaleY(0);
+      }
+    
+      .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+        transform: rotate(-35deg);
+      }
+    }
+    
+    @media (max-width: 500px) {
+
+      html {
+        font-size: 65%;
+      }      
+        .menu-items li {
+        font-size: 1.6rem;
+        margin-bottom: 2.5rem;
+        font-size: 1.8rem;
+        font-weight: 500;
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+    header{
+        height: 300px;
+    }
+    .imagen{
+        height: 100%;
+    }
+    .name {
+        top:60%;
+        font-size: 24px;
+    }
+    .titular{
+        font-size: 24px;
+        top:80%;
+        left: 60%;
+    }
+    .cont-about{
+     flex-direction: column;
+     height: auto;
+    }
+    .title, .description{
+        width: 100%;
+        height: auto;
+        margin-top: 16px ;
+    }
+    h2{
+        font-size: 24px;
+    }
+
+    .cont-proyects{
+        height: 350px;
+        width: 100%;
+    }
+    .tegnologyes{
+        flex-direction: column;
+        height: auto;
+    }
+    .cont-skills{
+        width: 100%;
+        height: auto;
+    }
+    .cont-icons{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 50% 50%;
+        padding: 0px;
+        align-self: center;
+        width: 328px;
+        height: 200px;
+    }
+    .icons i{
+        width: 48px;
+        height: 48px;
+        font-size: 32px;
+        margin-top: 8px;
+    }
+    .icons{
+        justify-content: center;
+        
+        flex-direction: column-reverse;
+    }
+    h3{
+        font-size: 16px;
+        top: 0px;
+    }
+    footer h2{
+        font-size: 24px;
+    }
+
+    .contact{
+        display: grid;
+        grid-template-columns: 100% ;
+    }
+    .i-contact{
+        width: 20%;
+        font-size: 32px;
+        padding: 16px;
+    }
+    .face{
+        position: static;
+        backface-visibility:visible;
+        transform: rotateY(0deg);
+        overflow: hidden;
+    }
+    .back{
+        background: none;
+        font-size: 16px;
+    }
+
+    .short-description{
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+
+
+  
+  input[type=radio] {
+    display: none;
+  }
+  
+  .card {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: transform .4s ease;
+    cursor: pointer;
+  }
+  
+  .container-projects{
+    width: 100%;
+    max-width: 800px;
+    max-height: 600px;
+    height: 80%;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cards {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    margin-bottom: 20px;
+  }
+  
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  #item-1:checked ~ .cards #song-3, #item-2:checked ~ .cards #song-1, #item-3:checked ~ .cards #song-2 {
+    transform: translatex(-40%) scale(.8);
+    opacity: .4;
+    z-index: 0;
+  }
+  
+  #item-1:checked ~ .cards #song-2, #item-2:checked ~ .cards #song-3, #item-3:checked ~ .cards #song-1 {
+    transform: translatex(40%) scale(.8);
+    opacity: .4;
+    z-index: 0;
+  }
+  
+  #item-1:checked ~ .cards #song-1, #item-2:checked ~ .cards #song-2, #item-3:checked ~ .cards #song-3 img{
+    transform: translatex(0) scale(1);
+    opacity: 1;
+    z-index: 1;
+    box-shadow:  5px 5px 8px rgba(81, 81, 81, 0.47);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
