@@ -7,7 +7,7 @@ document.getElementById("2").addEventListener("mouseover" , ()=>{
 })
 
 document.getElementById("3").addEventListener("mouseover" , ()=>{
-    document.querySelector(".short-description p").innerHTML ="una de mis preferidas"
+    document.querySelector(".short-description p").innerHTML ="una de mis preferidas "
 })
 
 document.getElementById("4").addEventListener("mouseover" , ()=>{
@@ -30,3 +30,13 @@ document.getElementById("8").addEventListener("mouseover" , ()=>{
     document.querySelector(".short-description p").innerHTML ="chau"
 })
 
+
+document.querySelector(".menu-items").addEventListener("click",()=>{
+    document.querySelector(".menu-items").classList.toggle  ("mostrar")
+    document.querySelector(".hamburger-lines").classList.toggle  ("mostrar")
+})
+
+document.querySelector("input").addEventListener("click",()=>{
+    document.querySelector(".menu-items").classList.toggle  ("mostrar")
+    document.querySelector(".hamburger-lines").classList.toggle  ("mostrar")
+})
