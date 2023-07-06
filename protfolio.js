@@ -11,23 +11,23 @@ document.getElementById("3").addEventListener("mouseover" , ()=>{
 })
 
 document.getElementById("4").addEventListener("mouseover" , ()=>{
-    document.querySelector(".short-description p").innerHTML ="chau"
+    document.querySelector(".short-description p").innerHTML ="#"
 })
 
 document.getElementById("5").addEventListener("mouseover" , ()=>{
-    document.querySelector(".short-description p").innerHTML ="hola"
+    document.querySelector(".short-description p").innerHTML ="#"
 })
 
 document.getElementById("6").addEventListener("mouseover" , ()=>{
-    document.querySelector(".short-description p").innerHTML ="chau"
+    document.querySelector(".short-description p").innerHTML ="#"
 })
 
 document.getElementById("7").addEventListener("mouseover" , ()=>{
-    document.querySelector(".short-description p").innerHTML ="hola"
+    document.querySelector(".short-description p").innerHTML ="#"
 })
 
 document.getElementById("8").addEventListener("mouseover" , ()=>{
-    document.querySelector(".short-description p").innerHTML ="chau"
+    document.querySelector(".short-description p").innerHTML ="#"
 })
 
 
@@ -40,3 +40,11 @@ document.querySelector("input").addEventListener("click",()=>{
     document.querySelector(".menu-items").classList.toggle  ("mostrar")
     document.querySelector(".hamburger-lines").classList.toggle  ("mostrar")
 })
+
+
+
+
+
+
+
+
