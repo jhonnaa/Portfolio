@@ -45,7 +45,6 @@ footer h2{
     display: flex;
     width: 100%;
     height: 100%;
-    border-bottom: 1px solid black;
     background-color: aliceblue;
 }
 
@@ -415,8 +414,11 @@ input[type=radio] {
     .titular,.name{
         font-size: 60px;
     }
-    header{
-
+    .apart{
+        width: 60%;
+    }
+    .title{
+        width: 40%;
     }
     .container {
         z-index: 10;
@@ -478,11 +480,50 @@ input[type=radio] {
     
 @media (max-width: 670px) {
 
+    .title{
+        width: 40%;
+    }
     .name,.titular{
         font-size: 40px;
     }
     .cont-yo{
         width: 250px;
+    }
+    .cont-skills{
+        width: 100%;
+        height: auto;
+    }
+    .cont-icons{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 50% 50%;
+        padding: 0px;
+        align-self: center;
+        width: 85%;
+        height: 200px;
+    }
+    .icons i{
+        width: 64px;
+        height: 64px;
+        font-size: 32px;
+        margin-top: 8px;
+    }
+    .icons{
+        justify-content: center;
+        
+        flex-direction: column-reverse;
+    }
+    h3{
+        font-size: 16px;
+        top: 55px;
+        opacity: 0;
+    }
+    i:hover~h3{
+        opacity: 1;
+    }
+
+    .container-projects{
+        height: 300px;
     }
 
 
@@ -543,6 +584,8 @@ input[type=radio] {
         font-size: 1.3rem;
         font-weight: 500;
     }
+
+  
     
 .mostrar{
     transform: translateY(0);
@@ -597,6 +640,9 @@ input[type=radio] {
 @media (max-width: 500px) {
     .cont-yo{
         width: 200px;
+    }
+    p{
+        font-size: 14px;
     }
 
     html {
