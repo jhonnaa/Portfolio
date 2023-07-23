@@ -13,6 +13,7 @@ section{
     display: flex;
 }
 
+
 .burger-menu{
     display: none;
 }
@@ -21,7 +22,8 @@ h2{
     font-family: 'Titillium Web', sans-serif;
 }
 h3{
-    top: 55px;
+    opacity: 0;
+    top: 65px;
     font-size: 18px;
     font-family: 'Titillium Web', sans-serif;
     position:absolute;
@@ -162,7 +164,7 @@ p{
     
     padding: 8px;    
     width: 100%;
-    height: 85%;
+    height: 100%;
     justify-content: center;
     align-items: center;
     border-bottom: solid white 10px;
@@ -205,25 +207,28 @@ footer{
 
 .icons{
     position: relative;
-    width: 80%;
-    height: 80%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     perspective: 300px;
+    width: 100%;
+    height: 100%;
 }
 
 
 .icons i{
-    margin-bottom: 5px;
+    margin: 5px;
     border-radius: 22px;
     display: flex;
-    width: 96px;
-    height: 96px;
+    width: 80px;
+    height: 80px;
     background: linear-gradient(to top, #2167CF, #000000);
-    font-size: 72px;
+    font-size: 64px;
     color: white;
     transition: all .6s;
+    justify-content: center;
+    align-items: center;
 }
 
 .icons i:hover{
@@ -243,7 +248,7 @@ i:hover~h3{
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .contact{
@@ -430,6 +435,10 @@ input[type=radio] {
         margin: auto;
     }
 
+
+    i:hover~h3{
+        opacity: 1;
+    }
     
     /* ............/navbar/............ */
     
