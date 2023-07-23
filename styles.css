@@ -44,14 +44,41 @@ footer h2{
     position: relative;
     display: flex;
     width: 100%;
-    height: 100vh;
-    
+    height: 100%;
+    border-bottom: 1px solid black;
     background-color: aliceblue;
 }
+
+
+.titular{
+    position: absolute;
+    width: auto;
+    height: 80px;
+    left: 50%;
+    top: 70%;
+    font-family: 'Oswald', sans-serif;
+    font-size:80px;
+    font-weight: bold;
+}
+.name{
+    position: absolute;
+    width: auto;
+    height: 80px;
+    left: 60%;
+    top: 20%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 80px;
+    font-weight: bold;
+}
+.cont-yo{
+    width: 400px;
+    height: auto;
+}
 .yo{
+    
     z-index: 0;
-    width: 35%;
-    height: 100%;
+    width: 100%;
+    height: auto;
 }
 
 nav{
@@ -176,26 +203,6 @@ footer{
     background-color: rgb(20, 20, 20);
 }
 
-.titular{
-    position: absolute;
-    width: auto;
-    height: 80px;
-    left: 50%;
-    top: 70%;
-    font-family: 'Oswald', sans-serif;
-    font-size:80px;
-    font-weight: bold;
-}
-.name{
-    position: absolute;
-    width: auto;
-    height: 80px;
-    left: 60%;
-    top: 20%;
-    font-family: 'Oswald', sans-serif;
-    font-size: 80px;
-    font-weight: bold;
-}
 
 .icons{
     position: relative;
@@ -394,7 +401,6 @@ input[type=radio] {
     opacity: 1;
 
 }
-
 /*---------------------------------------------------------------------*/
 
 
@@ -402,8 +408,16 @@ input[type=radio] {
 
 
 
-@media screen and (max-width: 780px) {   
-    
+@media screen and (max-width: 880px) {   
+    .cont-yo{
+        width: 300px;
+    }
+    .titular,.name{
+        font-size: 60px;
+    }
+    header{
+
+    }
     .container {
         z-index: 10;
         
@@ -462,8 +476,14 @@ input[type=radio] {
     
     /* ......../ media query /.......... */
     
-@media (max-width: 640px) {
+@media (max-width: 670px) {
 
+    .name,.titular{
+        font-size: 40px;
+    }
+    .cont-yo{
+        width: 250px;
+    }
 
 
     /*burger menu----------------------------------*/
@@ -575,6 +595,9 @@ input[type=radio] {
 }
     
 @media (max-width: 500px) {
+    .cont-yo{
+        width: 200px;
+    }
 
     html {
         font-size: 65%;
